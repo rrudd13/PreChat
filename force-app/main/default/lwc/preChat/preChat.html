@@ -1,0 +1,16 @@
+<template>
+    <template if:true={backgroundImgURL}>
+        <img src={backgroundImgURL}/>
+    </template>
+    <lightning-card title="Prechat Form">        
+        <template class="slds-m-around_medium" for:each={fields} for:item="field">
+            <div key={field.name}>
+                <lightning-input key={I_need_help_with__c} required={field.required}></lightning-input>
+                <lightning-input key={Secondary_Information__c} required={field.required}></lightning-input>
+
+            </div>
+        </template>
+    </lightning-card>
+    <lightning-button label={startChatLabel} title={startChatLabel} onclick={handleStartChat} class="slds-m-left_x-small">
+    </lightning-button>
+</template>

@@ -2,9 +2,6 @@ import BasePrechat from 'lightningsnapin/basePrechat';
 import { api, track } from 'lwc';
 import startChatLabel from '@salesforce/label/c.StartChat';
 
-export NODE_TLS_REJECT_UNAUTHORIZED='0'
-node app.js
-
 export default class Prechat extends BasePrechat {
     @api prechatFields;
     @api backgroundImgURL;
